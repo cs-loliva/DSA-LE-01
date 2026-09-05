@@ -11,8 +11,8 @@ fig, axes = plt.subplots(1, 2, figsize=(13, 5.5))
 
 #Linear
 ax = axes[0]
-ax.plot(merge.n, merge.ms, marker='o', color='', label="Merge Sort")   
-ax.plot(bubble.n, bubble.ms, marker='s', color='', label="Bubble Sort")
+ax.plot(merge.n, merge.ms, marker='o', color='#301A4B', label="Merge Sort")   
+ax.plot(bubble.n, bubble.ms, marker='s', color='#4d8b31', label="Bubble Sort")
 ax.set_xlabel("Input size (n)")
 ax.set_ylabel("Execution time (ms)")
 ax.set_title("Execution time vs Input size (Linear scale)")
@@ -21,8 +21,8 @@ ax.grid(alpha=0.3)
 
 #Log-Log
 ax2 = axes[1]
-ax2.plot(merge.n, merge.ms, marker='o', color='', label="Merge Sort -- O(n log n)")   
-ax2.plot(bubble.n, bubble.ms, marker='s', color='', label="Bubble Sort -- O(n\u00b2)")
+ax2.plot(merge.n, merge.ms, marker='o', color='#301A4B', label="Merge Sort -- O(n log n)")   
+ax2.plot(bubble.n, bubble.ms, marker='s', color='#4d8b31', label="Bubble Sort -- O(n\u00b2)")
 ax2.set_xlabel("Input size (n, log scale)")
 ax2.set_ylabel("Execution time (ms, log scale)")
 ax2.set_xscale('log')
